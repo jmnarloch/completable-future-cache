@@ -1,0 +1,10 @@
+ext {
+
+    libraries = [
+
+            guava  : 'com.google.guava:guava:19.0',
+
+            junit  : 'junit:junit:4.12',
+            mockito: 'org.mockito:mockito-all:1.10.19'
+    ]
+}
