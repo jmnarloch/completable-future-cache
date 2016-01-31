@@ -1,6 +1,6 @@
 # CompletableFuture cache
 
-> Caches CompletableFuture computations and results
+> Caches CompletableFuture computations and their results
 
 [![Build Status](https://travis-ci.org/jmnarloch/completable-future-cache.svg?branch=master)](https://travis-ci.org/jmnarloch/completable-future-cache)
 [![Coverage Status](https://coveralls.io/repos/jmnarloch/completable-future-cache/badge.svg?branch=master&service=github)](https://coveralls.io/github/jmnarloch/completable-future-cache?branch=master)
