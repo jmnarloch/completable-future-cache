@@ -129,8 +129,10 @@ class EvictableCache<K, V> implements Cache<K, V> {
     @Override
     public void invalidateIfPresent(K key, Consumer<V> consumer) {
 
-        cache.computeIfPresent(key, (k, v) -> { consumer.accept(v); return v; });
-        cache.remove(key);
+        final V value = cache.remove(key);
+        if(value != null) {
+            consumer.accept(value);
+        }
     }
 
     /**
